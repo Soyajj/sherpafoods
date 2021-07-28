@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/Gotham-Thin.otf");
+}
+
+@font-face {
+  font-family: gothambook;
+  src: url("../fonts/GothamBook.ttf");
+}
+
+.html {
+  font-family: gotham;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: url("../img/bg.jpg") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.himalayan,
+.sherpa {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.himalayan img {
+  height: 12vh;
+  object-fit: contain;
+}
+
+.sherpa img {
+  height: 25vh;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  text-transform: uppercase;
+  font-family: gothambook;
+  font-size: 1rem;
+}
+
+.himalayan .btn {
+  background: black;
+  color: #ff8801;
+}
+
+.himalayan .btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.sherpa .btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #bd2027;
+}
+
+.sherpa .info {
+  color: white;
+}
+
+.info {
+  width: 60%;
+  line-height: 1.5rem;
+  text-align: center;
+  font-family: gotham;
+  margin-bottom: 5%;
+}
+
+.logo {
+  height: 20vh;
+  /* background-color: red; */
+  display: grid;
+  place-content: end;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .himalayan {
+    background-color: white;
+  }
+  .sherpa {
+    background-color: black;
+  }
+}
