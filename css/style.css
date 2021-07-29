@@ -18,14 +18,24 @@
   font-family: gotham;
 }
 
+body {
+  font-size: 18px;
+}
+
 .container {
   height: 100vh;
   display: grid;
   grid-template-columns: 50% 50%;
-  background: url("../img/bg.jpg") no-repeat;
-  background-position: center;
+}
+
+.himalayan {
+  background: url("../img/bg2.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+}
+.sherpa {
+  background: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -34,15 +44,16 @@
   display: grid;
   place-content: center;
   place-items: center;
+  font-size: 1rem;
 }
 
 .himalayan img {
-  height: 12vh;
+  height: 15vh;
   object-fit: contain;
 }
 
 .sherpa img {
-  height: 25vh;
+  height: 30vh;
 }
 
 .btn {
@@ -92,15 +103,11 @@
 
 @media screen and (max-width: 800px) {
   .container {
-    height: 120vh;
+    height: 130vh;
     display: grid;
     grid-template-columns: 100%;
   }
-
-  .himalayan {
-    background-color: white;
-  }
-  .sherpa {
-    background-color: black;
+  .sherpa img {
+    height: 25vh;
   }
 }
