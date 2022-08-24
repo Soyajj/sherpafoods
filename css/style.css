@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: gotham;
-  src: url("../fonts/Gotham-Thin.otf");
-}
-
-@font-face {
-  font-family: gothambook;
-  src: url("../fonts/GothamBook.ttf");
-}
-
-.html {
-  font-family: gotham;
-}
-
-body {
-  font-size: 18px;
-}
 
 .container {
   height: 100vh;
@@ -29,76 +12,46 @@ body {
 }
 
 .himalayan {
-  background: url("../img/bg2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #AD0C12;
 }
 .sherpa {
-  background: url("../img/bg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+   background-color: #000000;
 }
 
 .himalayan,
 .sherpa {
   display: grid;
-  place-content: center;
   place-items: center;
-  font-size: 1rem;
 }
 
 .himalayan img {
-  height: 15vh;
+  height: 79vh;
+  width: 100%;
   object-fit: contain;
+  margin-top: -5%;
 }
+
 
 .sherpa img {
-  height: 30vh;
+  height: 60vh;
 }
 
-.btn {
-  padding: 12px 20px;
-  border: none;
-  text-transform: uppercase;
-  font-family: gothambook;
-  font-size: 1rem;
+.button a img{
+  height: 5vh;
+  width: max-content;
 }
 
-.himalayan .btn {
-  background: black;
-  color: #ff8801;
+
+.logo{
+  margin-top: 5%;
 }
 
-.himalayan .btn:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-}
-
-.sherpa .btn:hover {
-  cursor: pointer;
-  background-color: black;
-  color: #bd2027;
-}
-
-.sherpa .info {
-  color: white;
-}
-
-.info {
-  width: 60%;
-  line-height: 1.5rem;
-  text-align: center;
-  font-family: gotham;
-  margin-bottom: 5%;
-}
-
-.logo {
+.logo img{
   height: 20vh;
-  /* background-color: red; */
-  display: grid;
-  place-content: end;
-  margin-bottom: 5%;
+}
+
+.himalayan .logo img{
+  height: 10vh;
 }
 
 @media screen and (max-width: 800px) {
