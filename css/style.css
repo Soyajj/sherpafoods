@@ -26,14 +26,16 @@
 
 .himalayan img {
   height: 79vh;
+  margin-top: -9%;
   width: 100%;
-  object-fit: contain;
-  margin-top: -5%;
+  object-fit: cover;
 }
 
 
 .sherpa img {
   height: 60vh;
+  object-fit: cover;
+ 
 }
 
 .button a img{
@@ -42,28 +44,40 @@
 }
 
 
-.logo{
-  margin-top: 5%;
-}
-
 .logo img{
   height: 20vh;
 }
 
 .himalayan .logo img{
-  height: 10vh;
+  height: 9vh;
+  margin-top: 10%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .container {
-    height: 130vh;
-    display: grid;
-    grid-template-columns: 100%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
   }
-  .sherpa img {
-    height: 25vh;
+
+  .sherpa,.himalayan{
+    height: 100vh;
+    width: 100%;
   }
-  .himalayan img {
-    height: 12vh;
+
+  .himalayan .banner img {
+    height: 45vh;
+    margin-top: -5%;
+    width: 100%;
+    object-fit: cover;
   }
+  
+  
+  .sherpa .banner img {
+    height: 35vh;
+    object-fit: cover;
+    width: 100%;
+   
+  }
+ 
 }
